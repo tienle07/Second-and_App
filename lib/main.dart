@@ -41,6 +41,10 @@ class _MyHomePageState extends State<MyHomePage> {
       style: optionStyle,
     ),
     Text(
+      'News',
+      style: optionStyle,
+    ),
+    Text(
       'Product',
       style: optionStyle,
     ),
@@ -59,6 +63,7 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       appBar: AppBar(
         title: const Text('Menu Bar'),
       ),
@@ -78,8 +83,12 @@ class _MyHomePageState extends State<MyHomePage> {
             label: 'Saved',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart_outlined),
+            icon: Icon(Icons.post_add_outlined),
             label: 'News',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.shopping_cart_outlined),
+            label: 'Product',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person),
